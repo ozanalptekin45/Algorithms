@@ -4,6 +4,5 @@ def euclid(numberOne,numberTwo):
         return numberOne
     else: return euclid(numberTwo,numberOne%numberTwo)
 
-numberOne=int(input("Please, enter a number : "))
-numberTwo=int(input("Please, enter another number : "))
-print(f"Greates Common Divisior :{euclid(numberOne,numberTwo)}")
+if __name__=="__main__":
+    print(f"""Greates Common Divisior :{euclid(int(input("Please, enter a number : ")),int(input("Please, enter another number : ")))}""")
